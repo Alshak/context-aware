@@ -1,0 +1,73 @@
+[
+  {
+    "model": "workflows.abstractwidget", 
+    "fields": {
+      "category": "43303106-bb42-467f-8ffe-6ac1f5a011e3", 
+      "treeview_image": "", 
+      "uid": "aa8e12a8-1a98-4699-9b96-ab86a7632533", 
+      "windows_queue": false, 
+      "package": "context_aware", 
+      "interaction_view": "", 
+      "has_progress_bar": false, 
+      "image": "", 
+      "description": "", 
+      "static_image": "", 
+      "action": "ca_apply_binary_threshold", 
+      "visualization_view": "", 
+      "streaming_visualization_view": "", 
+      "post_interact_action": "", 
+      "wsdl_method": "", 
+      "wsdl": "", 
+      "interactive": false, 
+      "is_streaming": false, 
+      "order": 1, 
+      "name": "Apply binary threshold to predict classes"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "aa8e12a8-1a98-4699-9b96-ab86a7632533", 
+      "name": "Binary threshold", 
+      "short_name": "thr", 
+      "default": "", 
+      "description": "", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": "text", 
+      "variable": "bin_thres", 
+      "parameter": false, 
+      "order": 2, 
+      "uid": "c478fa0c-632c-472d-93eb-b0a908186d0a"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "aa8e12a8-1a98-4699-9b96-ab86a7632533", 
+      "name": "Binary score", 
+      "short_name": "scr", 
+      "default": "", 
+      "description": "", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": "textarea", 
+      "variable": "score", 
+      "parameter": false, 
+      "order": 1, 
+      "uid": "e9d5add2-1c79-4e28-a601-525830955ffe"
+    }
+  }, 
+  {
+    "model": "workflows.abstractoutput", 
+    "fields": {
+      "widget": "aa8e12a8-1a98-4699-9b96-ab86a7632533", 
+      "name": "Predict classes", 
+      "short_name": "cls", 
+      "description": "", 
+      "variable": "classes", 
+      "order": 1, 
+      "uid": "cdcb906e-4ce1-4a84-8865-2e02a340a053"
+    }
+  }
+]

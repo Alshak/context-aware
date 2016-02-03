@@ -1,0 +1,90 @@
+[
+  {
+    "model": "workflows.abstractwidget", 
+    "fields": {
+      "category": "43303106-bb42-467f-8ffe-6ac1f5a011e3", 
+      "treeview_image": "", 
+      "uid": "f649ac47-02f3-42a1-8c07-f969907159a5", 
+      "windows_queue": false, 
+      "package": "context_aware", 
+      "interaction_view": "", 
+      "has_progress_bar": false, 
+      "image": "", 
+      "description": "", 
+      "static_image": "", 
+      "action": "ca_set_binary_threshold_from_skew", 
+      "visualization_view": "", 
+      "streaming_visualization_view": "", 
+      "post_interact_action": "", 
+      "wsdl_method": "", 
+      "wsdl": "", 
+      "interactive": false, 
+      "is_streaming": false, 
+      "order": 1, 
+      "name": "Set binary threshold from skew (costs and class ratio)"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "f649ac47-02f3-42a1-8c07-f969907159a5", 
+      "name": "Cost of a false negative", 
+      "short_name": "cfn", 
+      "default": "1", 
+      "description": "Misclassification cost of an actual positive predicted as negative", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": "text", 
+      "variable": "cost_false_neg", 
+      "parameter": true, 
+      "order": 1, 
+      "uid": "06cb4cae-8107-4e40-898d-0f0540c933d9"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "f649ac47-02f3-42a1-8c07-f969907159a5", 
+      "name": "Cost of a false positive", 
+      "short_name": "cfp", 
+      "default": "1", 
+      "description": "Misclassification cost of an actual negative predicted as positive", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": "text", 
+      "variable": "cost_false_pos", 
+      "parameter": true, 
+      "order": 1, 
+      "uid": "7c61cb2f-8251-4d89-b350-094dc30ea328"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "f649ac47-02f3-42a1-8c07-f969907159a5", 
+      "name": "Ratio positive/negative", 
+      "short_name": "rpn", 
+      "default": "1", 
+      "description": "Proportion of actual positive divided by the proportion of actual negative", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": "text", 
+      "variable": "ratio_pos_neg", 
+      "parameter": true, 
+      "order": 1, 
+      "uid": "acc94ff6-bf55-4e1d-a80e-809becda8a23"
+    }
+  }, 
+  {
+    "model": "workflows.abstractoutput", 
+    "fields": {
+      "widget": "f649ac47-02f3-42a1-8c07-f969907159a5", 
+      "name": "Binary Threshold", 
+      "short_name": "thr", 
+      "description": "", 
+      "variable": "bin_thres", 
+      "order": 1, 
+      "uid": "47fcc51a-17e3-4824-8852-91f3ef30727a"
+    }
+  }
+]

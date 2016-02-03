@@ -1,0 +1,109 @@
+[
+  {
+    "model": "workflows.abstractwidget", 
+    "fields": {
+      "category": "43303106-bb42-467f-8ffe-6ac1f5a011e3", 
+      "treeview_image": "", 
+      "uid": "f42c4d99-48f8-4db3-b475-070d47450c1b", 
+      "windows_queue": false, 
+      "package": "context_aware", 
+      "interaction_view": "", 
+      "has_progress_bar": false, 
+      "image": "", 
+      "description": "", 
+      "static_image": "", 
+      "action": "ca_score_driven_threshold_selection", 
+      "visualization_view": "", 
+      "streaming_visualization_view": "", 
+      "post_interact_action": "", 
+      "wsdl_method": "", 
+      "wsdl": "", 
+      "interactive": false, 
+      "is_streaming": false, 
+      "order": 1, 
+      "name": "Score driven threshold selection"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "f42c4d99-48f8-4db3-b475-070d47450c1b", 
+      "name": "Score", 
+      "short_name": "scr", 
+      "default": "", 
+      "description": "", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": "text", 
+      "variable": "score", 
+      "parameter": false, 
+      "order": 1, 
+      "uid": "2bf7b1b4-bedc-4a52-a5f2-b30403db6036"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "f42c4d99-48f8-4db3-b475-070d47450c1b", 
+      "name": "Method", 
+      "short_name": "mtd", 
+      "default": "accuracy", 
+      "description": "", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": "select", 
+      "variable": "method", 
+      "parameter": true, 
+      "order": 2, 
+      "uid": "8ab0f7db-fcfb-4826-be19-d5e1a1a451cd"
+    }
+  }, 
+  {
+    "model": "workflows.abstractoutput", 
+    "fields": {
+      "widget": "f42c4d99-48f8-4db3-b475-070d47450c1b", 
+      "name": "Binary Threshold", 
+      "short_name": "thr", 
+      "description": "", 
+      "variable": "bin_thres", 
+      "order": 1, 
+      "uid": "9c32c339-efbf-4562-b1c2-d72f86400722"
+    }
+  }, 
+  {
+    "model": "workflows.abstractoption", 
+    "fields": {
+      "name": "Accuracy", 
+      "uid": "880c7983-61ea-42bb-b179-75e7c1fe4326", 
+      "value": "accuracy", 
+      "abstract_input": "8ab0f7db-fcfb-4826-be19-d5e1a1a451cd"
+    }
+  }, 
+  {
+    "model": "workflows.abstractoption", 
+    "fields": {
+      "name": "Precision", 
+      "uid": "90dfbc52-06ce-4b4d-a1b1-0a7226e85aed", 
+      "value": "precision", 
+      "abstract_input": "8ab0f7db-fcfb-4826-be19-d5e1a1a451cd"
+    }
+  }, 
+  {
+    "model": "workflows.abstractoption", 
+    "fields": {
+      "name": "F-Measure", 
+      "uid": "b8ecf6ec-b1cd-40f4-9597-419fc81ea635", 
+      "value": "F-Measure", 
+      "abstract_input": "8ab0f7db-fcfb-4826-be19-d5e1a1a451cd"
+    }
+  }, 
+  {
+    "model": "workflows.abstractoption", 
+    "fields": {
+      "name": "Balanced", 
+      "uid": "d4dab6f6-5872-433c-976c-ae4e74271565", 
+      "value": "balanced", 
+      "abstract_input": "8ab0f7db-fcfb-4826-be19-d5e1a1a451cd"
+    }
+  }
+]

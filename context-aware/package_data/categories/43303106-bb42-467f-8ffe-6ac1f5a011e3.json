@@ -1,0 +1,9 @@
+{
+  "model": "workflows.category", 
+  "fields": {
+    "name": "Context Aware", 
+    "parent": null, 
+    "order": 1, 
+    "uid": "43303106-bb42-467f-8ffe-6ac1f5a011e3"
+  }
+}

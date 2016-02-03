@@ -1,0 +1,107 @@
+[
+  {
+    "model": "workflows.abstractwidget", 
+    "fields": {
+      "category": "43303106-bb42-467f-8ffe-6ac1f5a011e3", 
+      "treeview_image": "", 
+      "uid": "9f8ee88b-aae0-441a-9348-17cd4bcb2d1e", 
+      "windows_queue": false, 
+      "package": "context_aware", 
+      "interaction_view": "", 
+      "has_progress_bar": false, 
+      "image": "", 
+      "description": "", 
+      "static_image": "", 
+      "action": "ca_estimate_pos_neg_from_prd_fct", 
+      "visualization_view": "", 
+      "streaming_visualization_view": "", 
+      "post_interact_action": "", 
+      "wsdl_method": "", 
+      "wsdl": "", 
+      "interactive": false, 
+      "is_streaming": false, 
+      "order": 1, 
+      "name": "Estimate positive/negative ratio from prd and fct files"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "9f8ee88b-aae0-441a-9348-17cd4bcb2d1e", 
+      "name": "Positive column", 
+      "short_name": "pos", 
+      "default": "", 
+      "description": "", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": "text", 
+      "variable": "pos_col", 
+      "parameter": true, 
+      "order": 3, 
+      "uid": "5f1582c9-a071-4511-9aa6-c5b8d84c0203"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "9f8ee88b-aae0-441a-9348-17cd4bcb2d1e", 
+      "name": "Deployment Data", 
+      "short_name": "fil", 
+      "default": "", 
+      "description": "", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": "file", 
+      "variable": "deploy_data", 
+      "parameter": false, 
+      "order": 1, 
+      "uid": "8884fd0c-a811-4243-8c42-7d37c5f69fad"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "9f8ee88b-aae0-441a-9348-17cd4bcb2d1e", 
+      "name": "Target attribute", 
+      "short_name": "tcl", 
+      "default": "class", 
+      "description": "", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": "text", 
+      "variable": "target_att", 
+      "parameter": true, 
+      "order": 2, 
+      "uid": "bcb4a307-a943-48b9-a5e8-570cd5958658"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "9f8ee88b-aae0-441a-9348-17cd4bcb2d1e", 
+      "name": "Negative column", 
+      "short_name": "neg", 
+      "default": "", 
+      "description": "", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": "text", 
+      "variable": "neg_col", 
+      "parameter": true, 
+      "order": 4, 
+      "uid": "ed7a4303-6ca0-45fd-a039-3b03cafc41c6"
+    }
+  }, 
+  {
+    "model": "workflows.abstractoutput", 
+    "fields": {
+      "widget": "9f8ee88b-aae0-441a-9348-17cd4bcb2d1e", 
+      "name": "Ratio positive/negative", 
+      "short_name": "rpn", 
+      "description": "", 
+      "variable": "ratio_pos_neg", 
+      "order": 1, 
+      "uid": "9e3ebe8f-e748-4eb6-a9ce-c4ebcc0eed7c"
+    }
+  }
+]
