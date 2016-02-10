@@ -5,7 +5,7 @@ def ca_set_binary_threshold_from_skew(input_dict):
     cost_false_neg = input_dict['cost_false_neg']
     ratio_pos_neg = input_dict['ratio_pos_neg']
     output_dict = {}
-    output_dict['bin_thres'] =  float(ratio_pos_neg) * (float(cost_false_pos) / float(cost_false_neg))
+    output_dict['bin_thres'] =  float(ratio_pos_neg) * (float(cost_false_neg) / float(cost_false_pos))
     return output_dict
 
 def ca_estimate_pos_neg_from_prd_fct(input_dict):
