@@ -62,12 +62,12 @@ def ca_rate_driven_threshold_selection(input_dict):
     previous = float('inf')
     current = previous
     for i in range(n):
-        current = list_score[i][1]
+        current = sorted_score[i][1]
         current_rank = current_rank + 1        
         if current_rank > rank:
             output_dict['bin_thres'] = (previous + current) / float(2)                     
             break
-        previous = list_score[i][1]
+        previous = sorted_score[i][1]
     return output_dict
 
 def ca_score_driven_threshold_selection(input_dict):
@@ -128,7 +128,7 @@ def get_value(method, TP, TN, P, N):
     if method == 'recall':
         return recall
     if TP + FP > 0:
-        precision = TP / float(TP + P)
+        precision = TP / float(TP + FP)
         if method == 'precision':
             return precision
         if precision + recall > 0:
