@@ -28,6 +28,23 @@
     "model": "workflows.abstractinput", 
     "fields": {
       "widget": "b22c82a2-9c2a-4a7c-bb73-5f74f923fd31", 
+      "name": "Rate", 
+      "short_name": "rte", 
+      "default": "10", 
+      "description": "", 
+      "required": true, 
+      "multi": false, 
+      "parameter_type": "text", 
+      "variable": "rate", 
+      "parameter": true, 
+      "order": 1, 
+      "uid": "4e6b8460-8b66-4dab-8370-513a031bf78b"
+    }
+  }, 
+  {
+    "model": "workflows.abstractinput", 
+    "fields": {
+      "widget": "b22c82a2-9c2a-4a7c-bb73-5f74f923fd31", 
       "name": "Score", 
       "short_name": "scr", 
       "default": "", 
