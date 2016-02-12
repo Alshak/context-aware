@@ -6,13 +6,13 @@
       "treeview_image": "", 
       "uid": "b22c82a2-9c2a-4a7c-bb73-5f74f923fd31", 
       "windows_queue": false, 
-      "package": "context_aware", 
+      "package": "context-aware", 
       "interaction_view": "", 
       "has_progress_bar": false, 
       "image": "", 
       "description": "", 
       "static_image": "", 
-      "action": "ca_rate_driven_threshold_selection", 
+      "action": "ca_rank_driven_binary_threshold_selection", 
       "visualization_view": "", 
       "streaming_visualization_view": "", 
       "post_interact_action": "", 
@@ -21,7 +21,7 @@
       "interactive": false, 
       "is_streaming": false, 
       "order": 1, 
-      "name": "Rate driven threshold selection"
+      "name": "Rank driven binary threshold selection"
     }
   }, 
   {

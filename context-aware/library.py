@@ -44,7 +44,7 @@ def ca_apply_binary_threshold(input_dict):
     output_dict['classes'] = performance
     return output_dict
 
-def ca_rate_driven_threshold_selection(input_dict):
+def ca_rank_driven_binary_threshold_selection(input_dict):
     from collections import Counter
 
     performance = input_dict['score']
@@ -70,7 +70,7 @@ def ca_rate_driven_threshold_selection(input_dict):
         previous = sorted_score[i][1]
     return output_dict
 
-def ca_score_driven_threshold_selection(input_dict):
+def ca_optimal_binary_threshold_selection(input_dict):
     from collections import Counter
 
     performance = input_dict['score']

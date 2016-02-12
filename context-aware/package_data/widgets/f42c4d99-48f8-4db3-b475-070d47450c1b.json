@@ -6,13 +6,13 @@
       "treeview_image": "", 
       "uid": "f42c4d99-48f8-4db3-b475-070d47450c1b", 
       "windows_queue": false, 
-      "package": "context_aware", 
+      "package": "context-aware", 
       "interaction_view": "", 
       "has_progress_bar": false, 
       "image": "", 
       "description": "", 
       "static_image": "", 
-      "action": "ca_score_driven_threshold_selection", 
+      "action": "ca_optimal_binary_threshold_selection", 
       "visualization_view": "", 
       "streaming_visualization_view": "", 
       "post_interact_action": "", 
@@ -21,7 +21,7 @@
       "interactive": false, 
       "is_streaming": false, 
       "order": 1, 
-      "name": "Score driven threshold selection"
+      "name": "Optimal Binary threshold selection"
     }
   }, 
   {
